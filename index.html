@@ -10,6 +10,22 @@
 </head>
 <body>
     <script>
+        function modifyElement(){
+            console.log("voy a modificar aqui");
+            const miElemento = document.getElementById("ElementToModify").innerHTML = `
+            <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">New Card</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">aqui puedo usar commila simple y no pasa nada :v' .  '</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+            
+            ` ;
+            
+        }
         function openAlert(){
             console.log("alert!");
             alert("D:");
@@ -120,9 +136,13 @@
     <div class="container">
         <div class="row">
             <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Add new Card</button>
+                <button class="btn btn-primary" type="button" onclick="modifyElement()">Add new Card</button>
                 <button class="btn btn-danger" type="button" onclick="openAlert()">Show Alert</button>
-              </div>
+                </div>
+                <div id="ElementToModify">
+                    <h1>voy a morir :(</h1>
+                </div>
+
         </div>
     </div>
 </body>
